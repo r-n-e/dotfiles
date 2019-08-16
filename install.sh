@@ -14,5 +14,6 @@ cd $HOME
 
 for file in .vim .vimrc
 do
+  [[ ${file} = ".git"  ]] && contine
   [ ! -e $file ] && ln -s dotfiles/$file .
 done
